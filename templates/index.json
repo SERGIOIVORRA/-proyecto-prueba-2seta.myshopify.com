@@ -1,0 +1,284 @@
+{
+  "sections": {
+    "textoyfoto_yiHf84": {
+      "type": "textoyfoto",
+      "custom_css": [
+        "h2 {font-family: \"Poppins\", Sans-serif; font-size: 4.5rem; font-weight: 800; line-height: 1.1em; color: #1e1e1e; margin-top: 2em; margin-bottom: -0.1em;}",
+        "p {font-size: 1em; color: black; color: #1e1e1e; font-size: 20px; font-weight: 400; line-height: 1.5;}",
+        "#resaltado {font-weight: bold; color: black;}",
+        ".especialh2 {text-align: center; margin-top: -35%;}"
+      ],
+      "settings": {
+      }
+    },
+    "rich_text_YrdHa3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_d3CbBA": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Y ellos responden ...<\/strong>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_d3CbBA"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Poppins\", Sans-serif; font-size: 5rem; font-weight: 700; line-height: 1.1em; color: #1e1e1e;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 4,
+        "padding_bottom": 16
+      }
+    },
+    "videos_slider_ytkjRe": {
+      "type": "videos-slider",
+      "settings": {
+        "custom_liquid": ""
+      }
+    },
+    "imagenreseas_JE4H3w": {
+      "type": "imagenreseas",
+      "custom_css": [
+        "img {margin-top: 40px;}"
+      ],
+      "settings": {
+        "custom_liquid": ""
+      }
+    },
+    "featured_collection_z6WXUE": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "columnaconvideos_3qxpPp": {
+      "type": "columnaconvideos",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "slider_images": ""
+      }
+    },
+    "multicolumn_7yBWPd": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_TDf7AJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo_3dids.png",
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jefJL4": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_PgCPRx": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_TDf7AJ",
+        "column_jefJL4",
+        "column_PgCPRx"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "La evaluación general en Google es4.9 de 5,en base a 192 reseñas",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_fHEzNk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7NYKak": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>18 años, más de 250 compañeros<\/strong>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7NYKak"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-family: \"Poppins\", Sans-serif; font-size: 5rem; font-weight: 700; line-height: 1.1em; color: #1e1e1e;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "s_re_zwNQP3": {
+      "type": "SRe",
+      "settings": {
+        "custom_liquid": ""
+      }
+    },
+    "custom_liquid_kkwNXP": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".centered-text {text-align: center; \/* Centering the text *\/}",
+        ".centered-text a strong {font-weight: bold; \/* Making specific parts bold *\/}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"centered-text\">\n        <a>La evaluación general en Google es <strong>4.9<\/strong> de 5, en base a <strong>192 reseñas<\/strong><\/a>\n    <\/div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_QLEMYm": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".container {text-align: center; font-family: \"Poppins\", Sans-serif; font-size: 4rem; font-weight: 600; line-height: 1.1em; color: #1e1e1e;}",
+        "@media only screen and (max-width: 600px) {.container {display: none; } .container.mobile {display: block; }}",
+        "@media only screen and (min-width: 601px) {.container {display: none; } .container.desktop {display: block; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"container mobile\">\n        <p>18 años,más 250<\/p>\n        <p>compañeros<\/p>\n    <\/div>\n\n    <div class=\"container desktop\">\n        <p>18 años, más 250 compañeros<\/p>\n    <\/div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "librerialogos_LKhdfq": {
+      "type": "librerialogos",
+      "settings": {
+        "custom_liquid": ""
+      }
+    },
+    "slideshow_mjrFDX": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_PnfL3i": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_LMxjUz": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_PnfL3i",
+        "slide_LMxjUz"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    }
+  },
+  "order": [
+    "textoyfoto_yiHf84",
+    "rich_text_YrdHa3",
+    "videos_slider_ytkjRe",
+    "imagenreseas_JE4H3w",
+    "featured_collection_z6WXUE",
+    "columnaconvideos_3qxpPp",
+    "multicolumn_7yBWPd",
+    "rich_text_fHEzNk",
+    "s_re_zwNQP3",
+    "custom_liquid_kkwNXP",
+    "custom_liquid_QLEMYm",
+    "librerialogos_LKhdfq",
+    "slideshow_mjrFDX"
+  ]
+}

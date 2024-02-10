@@ -1,0 +1,56 @@
+{{ section.settings.custom_liquid }}
+{% schema %}
+{
+   "name": "YERCustom Liquid",
+   "settings": [
+   {
+      "type": "liquid",
+      "id": "custom_liquid",
+      "label": "Custom Liquid",
+      "info": "Add app snippets or other liquid code to create advanced customizations."
+   }],
+   "presets": [
+   {
+      "name": "YERCustom Liquid"
+   }]
+}
+{% endschema %}
+
+
+<div class="container mobile">
+        <p>Y ellos responden...</p>
+    </div>
+
+    <div class="container desktop">
+        <p>Y ellos responden...</p>
+    </div>
+
+
+    <style>
+.container {
+  text-align: center;
+  font-family: "Poppins", Sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.1em;
+  color: #1e1e1e;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    display: none;
+  }
+  .container.mobile {
+    display: block;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .container {
+    display: none;
+  }
+  .container.desktop {
+    display: block;
+  }
+}
+
+      
+    </style>

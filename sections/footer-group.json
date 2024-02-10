@@ -1,0 +1,39 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "fo_ot_er_si_X3Agwm": {
+      "type": "foOtErSI",
+      "custom_css": [
+        "h3 {font-weight: bold;}",
+        "a {text-decoration: none; color: white;}",
+        "a:hover {color: #5e97f8;}",
+        ".azulc:hover,.azulc:hover i{color: #49d5d7;}"
+      ],
+      "settings": {
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "fo_ot_er_si_X3Agwm",
+    "footer"
+  ]
+}

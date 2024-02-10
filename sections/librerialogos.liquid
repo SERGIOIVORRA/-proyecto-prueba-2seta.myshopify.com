@@ -1,0 +1,571 @@
+{{ section.settings.custom_liquid }}
+{% schema %}
+{
+   "name": "Custom Liquid LIBRE",
+   "settings": [
+   {
+      "type": "liquid",
+      "id": "custom_liquid",
+      "label": "Custom Liquid",
+      "info": "Add app snippets or other liquid code to create advanced customizations."
+   }],
+   "presets": [
+   {
+      "name": "Custom Liquid LIBRE"
+   }]
+}
+{% endschema %}
+
+{{ section.settings.custom_liquid }}
+
+  <style>
+  .image-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .image-item {
+    width: 24%; /* Ajusta el ancho según tus necesidades */
+    margin-bottom: 10px;
+  }
+
+  .image-item img {
+    width: 100%;
+    height: auto;
+   
+    border-radius: 5px; /* Añade esquinas redondeadas si lo deseas */
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+  }
+
+   .image-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan a una nueva línea */
+  }
+
+  .image-item {
+    width: 18%; /* Ajusta el ancho según tus necesidades para dispositivos de escritorio */
+    margin-bottom: 10px;
+  }
+
+  .image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Añade esquinas redondeadas si lo deseas */
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+  }
+
+  /* Cambiar el ancho de los elementos para dispositivos móviles */
+  @media (max-width: 767px) {
+    .image-item {
+      width: 30%; /* Tres elementos por fila en dispositivos móviles */
+    }
+  }
+
+  @media (max-width: 479px) {
+    .image-item {
+      width: 100%; /* Un elemento por fila en dispositivos móviles */
+    }
+  }
+</style>
+
+<div class="container">
+  <ul class="image-list">
+    <li class="image-item">
+      <img src="https://www.3dids.com/wp-content/uploads/trixder.jpg" alt="Image 1">
+    </li>
+    <li class="image-item">
+      <img src="https://www.3dids.com/wp-content/uploads/Diseno-sin-titulo-100-300x200.png" alt="Image 2">
+    </li>
+    <li class="image-item">
+      <img src="https://www.3dids.com/wp-content/uploads/fujitsu-300x200.png" alt="Image 3">
+    </li>
+    <li class="image-item">
+      <img src="https://www.3dids.com/wp-content/uploads/pedro-miralles-300x200.png" alt="Image 4">
+    </li>
+    <li class="image-item">
+      <img src="https://www.3dids.com/wp-content/uploads/ecoalf-300x200.png" alt="Image 5">
+    </li>
+  </ul>
+
+
+
+ <ul class="image-list">
+    <li class="image-item">
+      <img src=" 
+        https://www.3dids.com/wp-content/uploads/crocs-300x200.png
+        
+        " alt="Image 1">
+    </li>
+    <li class="image-item">
+      <img src=" 
+        https://www.3dids.com/wp-content/uploads/arcos.jpg
+        
+        
+        " alt="Image 2">
+    </li>
+    <li class="image-item">
+      <img src="
+        
+        https://www.3dids.com/wp-content/uploads/actiu-300x200.png
+        
+        " alt="Image 3">
+    </li>
+    <li class="image-item">
+      <img src="
+        https://www.3dids.com/wp-content/uploads/ferrovial.jpg
+        
+        " alt="Image 4">
+    </li>
+    <li class="image-item">
+      <img src="
+        
+        
+        https://www.3dids.com/wp-content/uploads/ahorramas-300x200.png
+        
+        " alt="Image 5">
+    </li>
+  </ul>
+
+
+
+
+ <ul class="image-list">
+    <li class="image-item">
+      <img src=" 
+      https://www.3dids.com/wp-content/uploads/maystar-300x200.png
+        
+        " alt="Image 1">
+    </li>
+    <li class="image-item">
+      <img src=" 
+        https://www.3dids.com/wp-content/uploads/ellesse-1-300x200.png
+        
+        
+        " alt="Image 2">
+    </li>
+    <li class="image-item">
+      <img src="
+        https://www.3dids.com/wp-content/uploads/fluchos-300x200.jpeg
+        
+        
+        " alt="Image 3">
+    </li>
+    <li class="image-item">
+      <img src="
+        https://www.3dids.com/wp-content/uploads/toms.jpg
+        
+        " alt="Image 4">
+    </li>
+    <li class="image-item">
+      <img src="
+        
+        https://www.3dids.com/wp-content/uploads/logo_gios.jpeg
+        
+        
+        " alt="Image 5">
+    </li>
+  </ul>
+
+
+
+ <ul class="image-list">
+    <li class="image-item">
+      <img src=" 
+     https://www.3dids.com/wp-content/uploads/pitillos-300x200.png
+        " alt="Image 1">
+    </li>
+    <li class="image-item">
+      <img src=" 
+      
+        https://www.3dids.com/wp-content/uploads/exe-300x200.png
+        
+        " alt="Image 2">
+    </li>
+    <li class="image-item">
+      <img src="
+       
+        https://www.3dids.com/wp-content/uploads/sonpura.jpg
+        
+        " alt="Image 3">
+    </li>
+    <li class="image-item">
+      <img src="
+       https://www.3dids.com/wp-content/uploads/greenwich-300x200.jpeg
+        
+        " alt="Image 4">
+    </li>
+    <li class="image-item">
+      <img src="
+        https://www.3dids.com/wp-content/uploads/cuple-300x200.png
+      
+        
+        
+        " alt="Image 5">
+    </li>
+  </ul>
+
+
+ <ul class="image-list">
+    <li class="image-item">
+      <img src=" 
+     https://www.3dids.com/wp-content/uploads/ASISA-300x200.jpeg
+        " alt="Image 1">
+    </li>
+    <li class="image-item">
+      <img src=" 
+      
+        https://www.3dids.com/wp-content/uploads/mrblue-300x200.png
+        
+        " alt="Image 2">
+    </li>
+    <li class="image-item">
+      <img src="
+       
+        https://www.3dids.com/wp-content/uploads/naturlider-300x200.png
+        
+        " alt="Image 3">
+    </li>
+    <li class="image-item">
+      <img src="
+       https://www.3dids.com/wp-content/uploads/logo_danone.jpeg
+        
+        " alt="Image 4">
+    </li>
+    <li class="image-item">
+      <img src="
+        
+      https://www.3dids.com/wp-content/uploads/ferre-300x200.png
+        
+        
+        " alt="Image 5">
+    </li>
+  </ul>
+
+
+
+
+   <ul class="image-list">
+    <li class="image-item">
+      <img src=" 
+     https://www.3dids.com/wp-content/uploads/VENTAMUEBLES-254x168-1.jpeg
+        " alt="Image 1">
+    </li>
+    <li class="image-item">
+      <img src=" 
+      
+        https://www.3dids.com/wp-content/uploads/logo_lodi.jpeg
+        
+        " alt="Image 2">
+    </li>
+    <li class="image-item">
+      <img src="
+       
+        https://www.3dids.com/wp-content/uploads/mt-helmets-300x200.png
+        
+        " alt="Image 3">
+    </li>
+    <li class="image-item">
+      <img src="
+       
+           https://www.3dids.com/wp-content/uploads/fabiolas-300x200.png
+        
+        " alt="Image 4">
+    </li>
+    <li class="image-item">
+      <img src="
+        
+      https://www.3dids.com/wp-content/uploads/eas-electric-300x200.jpeg
+     
+        
+        " alt="Image 5">
+    </li>
+  </ul>
+
+
+
+
+
+   <ul class="image-list">
+    <li class="image-item">
+      <img src=" 
+     https://www.3dids.com/wp-content/uploads/gabol-300x200.png
+        " alt="Image 1">
+    </li>
+    <li class="image-item">
+      <img src=" 
+      
+        https://www.3dids.com/wp-content/uploads/Sin-titulo-10-300x200.jpg
+        
+        " alt="Image 2">
+    </li>
+    <li class="image-item">
+      <img src="
+       
+        https://www.3dids.com/wp-content/uploads/Sin-titulo-99-300x200.jpg
+        
+        " alt="Image 3">
+    </li>
+    <li class="image-item">
+      <img src="
+       https://www.3dids.com/wp-content/uploads/ozoaqua-300x200.png
+        
+        " alt="Image 4">
+    </li>
+    <li class="image-item">
+      <img src="
+        
+      https://www.3dids.com/wp-content/uploads/undefasa.jpg
+        
+        
+        " alt="Image 5">
+    </li>
+  </ul>
+
+
+
+
+
+   <ul class="image-list">
+    <li class="image-item">
+      <img src=" 
+     https://www.3dids.com/wp-content/uploads/hot-potatoes.jpg
+        " alt="Image 1">
+    </li>
+    <li class="image-item">
+      <img src=" 
+      
+        https://www.3dids.com/wp-content/uploads/prospera-biotech-300x200.png
+        
+        " alt="Image 2">
+    </li>
+    <li class="image-item">
+      <img src="
+       
+        https://www.3dids.com/wp-content/uploads/moda-re-.jpg
+        
+        " alt="Image 3">
+    </li>
+    <li class="image-item">
+      <img src="
+       https://www.3dids.com/wp-content/uploads/bitex-300x200.png
+        
+        " alt="Image 4">
+    </li>
+    <li class="image-item">
+      <img src="
+        
+      https://www.3dids.com/wp-content/uploads/starpil-300x200.png
+        
+        
+        " alt="Image 5">
+    </li>
+  </ul>
+
+
+
+
+  
+
+   <ul class="image-list">
+    <li class="image-item">
+      <img src=" 
+     https://www.3dids.com/wp-content/uploads/arkopharma-300x200.png
+        " alt="Image 1">
+    </li>
+    <li class="image-item">
+      <img src=" 
+      
+        https://www.3dids.com/wp-content/uploads/aitex-300x200.png
+        
+        " alt="Image 2">
+    </li>
+    <li class="image-item">
+      <img src="
+       
+        https://www.3dids.com/wp-content/uploads/LOGOS-300x200.png
+        
+        " alt="Image 3">
+    </li>
+  
+    <li class="image-item">
+      <img src="
+        
+      https://www.3dids.com/wp-content/uploads/beauty-brand-300x200.png
+        
+        
+        " alt="Image 5">
+    </li>
+
+
+     <li class="image-item">
+      <img src="
+        
+      https://www.3dids.com/wp-content/uploads/bechi-1-300x200.png
+        
+        
+        " alt="Image 5">
+    </li>
+  </ul>
+
+
+
+
+
+  
+
+   <ul class="image-list">
+    <li class="image-item">
+      <img src=" 
+     https://www.3dids.com/wp-content/uploads/bariloche-300x200.png
+        " alt="Image 1">
+    </li>
+    <li class="image-item">
+      <img src=" 
+      
+        https://www.3dids.com/wp-content/uploads/bricopol-300x200.png
+        
+        " alt="Image 2">
+    </li>
+    <li class="image-item">
+      <img src="
+       
+        
+        https://www.3dids.com/wp-content/uploads/buba-camaron-300x200.png
+        " alt="Image 3">
+    </li>
+    <li class="image-item">
+      <img src="
+       
+        https://www.3dids.com/wp-content/uploads/williot-300x200.png
+        " alt="Image 4">
+    </li>
+    <li class="image-item">
+      <img src="
+        
+      https://www.3dids.com/wp-content/uploads/abionica-300x200.png
+        
+        
+        " alt="Image 5">
+    </li>
+  </ul>
+
+
+
+
+  
+
+   <ul class="image-list">
+    <li class="image-item">
+      <img src=" 
+     https://www.3dids.com/wp-content/uploads/casa-de-la-ermita-300x200.jpeg
+        " alt="Image 1">
+    </li>
+    <li class="image-item">
+      <img src=" 
+      
+        https://www.3dids.com/wp-content/uploads/nichi-seijo-300x200.png
+        
+        " alt="Image 2">
+    </li>
+    <li class="image-item">
+      <img src="
+       
+        https://www.3dids.com/wp-content/uploads/estilmenut-300x200.png
+        
+        " alt="Image 3">
+    </li>
+    <li class="image-item">
+      <img src="
+       
+        https://www.3dids.com/wp-content/uploads/ciclos-cabello-300x200.png
+        " alt="Image 4">
+    </li>
+    <li class="image-item">
+      <img src="
+        
+     https://www.3dids.com/wp-content/uploads/logo_apsa.jpeg
+        
+        
+        " alt="Image 5">
+    </li>
+  </ul>
+
+
+
+  
+
+   <ul class="image-list">
+    <li class="image-item">
+      <img src=" 
+     https://www.3dids.com/wp-content/uploads/biocomercio-300x200.png
+        " alt="Image 1">
+    </li>
+    <li class="image-item">
+      <img src=" 
+      https://www.3dids.com/wp-content/uploads/zampiere-300x200.png
+        
+        
+        " alt="Image 2">
+    </li>
+    <li class="image-item">
+      <img src="
+       
+        https://www.3dids.com/wp-content/uploads/mixtura-300x200.png
+        
+        " alt="Image 3">
+    </li>
+    <li class="image-item">
+      <img src="
+       
+        https://www.3dids.com/wp-content/uploads/wine-merchant-300x200.png
+        " alt="Image 4">
+    </li>
+    <li class="image-item">
+      <img src="
+        
+   https://www.3dids.com/wp-content/uploads/veracruz-300x200.png
+        
+        
+        " alt="Image 5">
+    </li>
+  </ul>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  </ul>

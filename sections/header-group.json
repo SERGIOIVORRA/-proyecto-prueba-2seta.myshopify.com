@@ -1,0 +1,171 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "custom_liquid_VWjxbc": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "* {margin: 0; padding: 0; box-sizing: border-box;}",
+        ".container {position: fixed; top: 0px; right: 4px;}",
+        ".item {display: inline-block;}",
+        ".button4 {border-radius: 20px; background-color: black; color: white; padding: 10px 20px; cursor: pointer; transition: background-color 0.3s;}",
+        ".button4:hover {background-color: #007bff;}",
+        "a {margin-right: 1px;}",
+        "button:hover {border: none;}",
+        "button {border: none;}",
+        "li {padding-top: 16px;}",
+        "#especial {text-decoration: none; color: inherit;}",
+        "#especial2 {text-decoration: none; color: inherit; color: gray;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"container\">\n  <ul>\n    <li class=\"item\"><a id=\"especial2\" href=\"https:\/\/form.typeform.com\/to\/rkFJn2?typeform-medium=embed-snippet&typeform-source=www.3dids.com\" > ¿Tienes un Proyecto?<\/a><\/li>\n    <li class=\"item\">\n      <button class=\"button4\"> <a id=\"especial\" href=\"https:\/\/form.typeform.com\/to\/rkFJn2?typeform-medium=embed-snippet&typeform-source=www.3dids.com\" >Contactar<\/a><\/button>\n    <\/li>\n  <\/ul>\n<\/div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "bottonytexto_PNX3RA": {
+      "type": "bottonytexto",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": ""
+      }
+    },
+    "section_custom_liquid_Bk9UxP": {
+      "type": "section-custom-liquid",
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+      }
+    },
+    "announcement_bar_LVBPMP": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_FkPzEK": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_FkPzEK"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "section_custom_liquid_xJEriQ": {
+      "type": "section-custom-liquid",
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+      }
+    },
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_FkK76H": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        },
+        "announcement_f6hRyD": {
+          "type": "announcement",
+          "settings": {
+            "text": "¿Tienes un Proyecto?",
+            "link": "https:\/\/form.typeform.com\/to\/rkFJn2?typeform-medium=embed-snippet&typeform-source=www.3dids.com"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_FkK76H",
+        "announcement_f6hRyD"
+      ],
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [
+        ".header__inline-menu {margin-left: ; font-weight: bold;}",
+        "span {text-decoration: none; color: black; padding-top: -7px;}",
+        "ul {margin-top: -20px;}",
+        "li {padding-right: 1em;}",
+        "a {font-size: 1.09em; color: black; padding-bottom: 0.3em;}",
+        ".header {margin-left: 0em; padding-bottom: 2px;}",
+        "header {}"
+      ],
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "always",
+        "show_line_separator": false,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "background-1",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "mobile_logo_position": "left",
+        "margin_bottom": 0,
+        "padding_top": 4,
+        "padding_bottom": 24
+      }
+    },
+    "custom_liquid_waCQpy": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "* {margin: 0; padding: 0; box-sizing: border-box;}",
+        ".container {position: fixed; top: 85%; right: 25px;}",
+        ".item {display: inline-block;}",
+        ".button4 {border-radius: 100%; background-color: #007bff; color: white; padding: 40px 15px; cursor: pointer; transition: background-color 0.3s; border: none;}",
+        "li {padding-top: 16px;}",
+        "p {font-weight: 500;}",
+        ".team-image {position: absolute; top: 0; left: 0; z-index: 1; transition: top 0.5s;}",
+        ".item {position: relative; z-index: 1;}",
+        "img:hover {transform: rotate(10deg); left: -5px; top: -4px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"container\">\n  <ul>\n    <li class=\"item\">\n      <button class=\"button4\"><p>¿Hablamos?<\/p><\/button>\n      <a href=\"https:\/\/form.typeform.com\/to\/rkFJn2?typeform-medium=embed-snippet&typeform-source=www.3dids.com\">\n\n<img src=\"https:\/\/www.3dids.com\/wp-content\/uploads\/team.png\" alt=\"Equipo\" class=\"team-image\">\n\n<\/a>\n    <\/li>\n  <\/ul>\n<\/div>",
+        "color_scheme": "",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_VWjxbc",
+    "bottonytexto_PNX3RA",
+    "section_custom_liquid_Bk9UxP",
+    "announcement_bar_LVBPMP",
+    "section_custom_liquid_xJEriQ",
+    "announcement-bar",
+    "header",
+    "custom_liquid_waCQpy"
+  ]
+}

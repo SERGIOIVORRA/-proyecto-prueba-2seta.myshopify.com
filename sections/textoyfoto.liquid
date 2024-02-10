@@ -1,0 +1,194 @@
+{{ section.settings.custom_liquid_tyf }}
+
+<style>
+   .container {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 15px;
+   }
+
+   .custom-section {
+      display: flex;
+      flex-direction: column;
+      padding: 0; /* Remove padding to eliminate extra white space above and below */
+    
+     
+   }
+
+   .custom-content,
+   .custom-video {
+      width: 100%;
+      margin: 0 0px;
+      font-size: 18px;
+       
+   }
+
+   .custom-video video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 18px;
+   }
+
+   @media only screen and (min-width: 600px) {
+      .custom-section {
+         flex-direction: row;
+      }
+
+      .custom-content,
+      .custom-video {
+         width: 100%;
+      }
+
+      .custom-content {
+         order: 1;
+         margin-left: 0em;
+      }
+
+      .custom-video {
+         order: 2;
+         margin-left: 2em; /* Adjust margin-left for better spacing */
+         margin-top: 20px;
+      }
+   }
+
+   .custom-video {
+      overflow: hidden;
+      position: relative;
+     
+   }
+
+   .custom-video video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      clip-path: circle(49% at 50% 50%);
+   }
+
+   .custom-video::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 4px;
+      border: 0px solid #fff;
+      pointer-events: none;
+   }
+
+   #videoborde {
+      padding: 0;
+      margin: 0;
+   }
+
+   .posicionbot {
+      /* Your positioning styles for mobile */
+   }
+
+   @media only screen and (max-width: 600px) {
+      .custom-video video {
+         clip-path: none; /* Remove clip-path on mobile devices */
+
+      }
+
+      .custom-section {
+         flex-direction: column; /* Change back to column layout for small screens */
+      }
+
+      .custom-content,
+      .custom-video {
+         width: 100%; /* Full width for small screens */
+         margin-left: 0; /* Remove margin for better spacing */
+      }
+   }
+</style>
+
+
+
+<style>
+   /* Establece un ancho del 100% para el contenedor del video */
+   #videoborde {
+      width: 100%;
+     padding-top: 100.25%
+   }
+</style>
+
+<div class="container" >
+   <div class="custom-section">
+      <div class="custom-content">
+         <h2>{{ section.settings.title }}Nos basamos en  la <br>confianza, por eso preguntamos</h2>
+         <p>{{ section.settings.text }} Durante 18 años siempre hemos pedido a nuestros <br> clientes <a id="resaltado"> feedback y opinión </a> porque lo que nos mueve  <br> es la confianza. <br></p>
+         <p>{{ section.settings.text }} Queremos ofrecer el mayor grado de <a id="resaltado">excelencia</a>, por  <br>eso no ocultamos nada y lo preguntamos todo.  <br></p>
+         <p>{{ section.settings.text }} Para nosotros es importante saber para poder hacer; <br> por eso, queremos que  sean nuestros clientes los que  <br>te cuenten todo lo que necesitas saber  <a id="resaltado"> sobre nosotros. </a></p>
+      </div>
+     
+      <div class="custom-video">
+    <div id="videoborde" class="video-container">
+        <br>
+        <iframe src="https://www.videoask.com/fkq8k0vzi" allow="camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;" style="border: none; border-radius: 24px; width: 500px; height: 500px; margin-top: 20px;" class="video-iframe"></iframe>
+         
+    </div>
+    </div>
+    
+
+<style>
+    @media (max-width: 4em) {
+        .video-container {
+            display: none; /* Oculta el contenedor en dispositivos móviles */
+        }
+    }
+
+
+
+ /* Media query para dispositivos móviles */
+   @media only screen and (max-width: 600px) {
+      #videoborde {
+         position: relative;
+         padding-top: 120.25%; /* Establece una relación de aspecto 16:9 para el contenedor del video */
+      }
+
+      .video-container {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+        
+      }
+   }
+
+
+
+
+  
+</style>
+
+   <div class="custom-video2">
+    <div id="videoborde" class="video-container">
+        <br>
+        <iframe src="https://www.videoask.com/fkq8k0vzi" allow="camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;" style="border: none; border-radius: 24px;  margin-top: 20px;" class="video-iframe"></iframe>
+    </div>
+    
+    </div>
+
+<style>
+    /* Estilo general para dispositivos móviles y de escritorio */
+    .custom-video2 {
+        display: none; /* Oculta el elemento de forma predeterminada */
+      
+    }
+
+    /* Media query para dispositivos con un ancho de pantalla máximo de 768px (puedes ajustar este valor según tus necesidades) */
+    @media only screen and (max-width: 4em) {
+        .custom-video2 {
+            display: block; /* Muestra el elemento solo en dispositivos con un ancho de pantalla máximo de 768px */
+        }
+    }
+</style>
+     
+   </div>
+ 
+
+ 
+</div> 

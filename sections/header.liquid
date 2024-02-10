@@ -1,0 +1,1157 @@
+<link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
+{%- if settings.predictive_search_enabled -%}
+  <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
+{%- endif -%}
+{%- if section.settings.menu_type_desktop == 'mega' -%}
+  <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
+  <noscript>{{ 'component-mega-menu.css' | asset_url | stylesheet_tag }}</noscript>
+{%- endif -%}
+
+{%- if settings.cart_type == "drawer" -%}
+  {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
+  {{ 'component-cart.css' | asset_url | stylesheet_tag }}
+  {{ 'component-totals.css' | asset_url | stylesheet_tag }}
+  {{ 'component-price.css' | asset_url | stylesheet_tag }}
+  {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+<noscript>{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-search.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-menu-drawer.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
+
+<style>
+
+  header{
+
+  
+ float:center;
+
+  }
+
+  
+  header-drawer {
+   
+    margin-left: ;
+  }
+
+  {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
+    .scrolled-past-header .header__heading-logo-wrapper {
+      width: 100%;
+    }
+  {%- endif -%}
+
+  {%- if section.settings.menu_type_desktop != "drawer" -%}
+    @media screen and (min-width: 990px) {
+      header-drawer {
+        display: none;
+      }
+    }
+
+
+
+
+
+
+
+
+
+  
+  {%- endif -%}
+.menu-drawer-container {
+  
+  
+  
+  
+  align-items: center;
+}
+
+.logo-image {
+  max-width: 100px; /* Ajusta el ancho máximo de la imagen según sea necesario */
+}
+
+.list-menu {
+  list-style: none;
+ 
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; /* Alinea los elementos en el centro */
+}
+
+
+
+.list-menu__item {
+  line-height: calc(1 + 0.3 / var(--font-body-scale));
+  border: 1px solid transparent; /* Establece un borde transparente por defecto */
+  display: flex;
+  align-items: center;
+}
+
+.list-menu__item:not(.logo-image) {
+   /* Cambia el borde a rojo para los elementos que no son una foto */
+}
+
+.list-menu__item--link {
+  text-decoration: none;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  line-height: calc(1 + 0.8 / var(--font-body-scale));
+}
+
+@media screen and (min-width: 750px) {
+  .list-menu__item--link {
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+}
+
+
+
+
+
+
+{# Este es un comentario de una sola línefefefefa #}
+
+
+
+
+
+.header-wrapper {
+  white-space: nowrap;
+}
+.header__inline-menu {
+  margin-left: ;
+  font-weight: bold;
+}
+.header__active-menu-item {
+  font-size: 1.3em;
+}
+.header__active-menu-item:hover {
+  font-size: 1.3em;
+}
+a {
+  font-size: 1.1em;
+  color: black;
+  padding-bottom: 0.3em;
+}
+
+#HeaderMenu-servicios{
+
+font-size:1.2em;
+  
+}
+
+  
+  
+span {
+  text-decoration: none;
+  color:black;
+}
+#Details-HeaderMenu-1:hover {
+  border-bottom: #007bff solid 3px;
+}
+#HeaderMenu-clientes:hover {
+  border-bottom: #007bff solid 3px;
+}
+#HeaderMenu-conocenos:hover {
+  border-bottom: #007bff solid 3px;
+}
+
+
+
+
+  #Details-HeaderMenu-1 {
+  border-bottom: rgba(255, 255, 255, 0) solid 3px;
+}
+#HeaderMenu-clientes {
+  border-bottom: rgba(255, 255, 255, 0) solid 3px;
+}
+#HeaderMenu-conocenos{
+  border-bottom: rgba(255, 255, 255, 0) solid 3px;
+}
+#HeaderMenu-servicios {
+  padding-bottom: 0.3em;
+}
+
+
+
+
+
+
+
+.list-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Opcional: ajustes adicionales para cuando se haga más pequeña la pantalla */
+@media screen and (max-width: 989px) {
+  .list-menu {
+    
+    align-items: center; /* Centrar verticalmente en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 988px) {
+  .list-menu {
+    flex-direction: column; /* Cambia a columna cuando el ancho de la ventana es menor de 1200px */
+  }
+}
+
+
+  
+  
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+
+
+
+
+
+ 
+
+
+
+
+
+  
+
+
+
+  
+ 
+
+
+
+  @media (max-width: 1200px) {
+  .{{ button_class }} {
+    display: none; 
+    
+  }
+
+
+
+
+    
+}
+
+
+
+  
+
+
+    #secion2 {
+      display: none;
+    }
+
+    #Details-HeaderMenu-1:hover {
+      
+    }
+
+
+
+
+  
+ 
+
+ 
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+{%- style -%}
+  .header {
+   
+    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
+  }
+
+  .section-header {
+    
+    position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
+    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+     
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-header {
+      margin-bottom: {{ section.settings.margin_bottom }}px;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .header {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
+{%- if settings.cart_type == "drawer" -%}
+  <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+  <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-reset" class="icon icon-close"  fill="none" viewBox="0 0 18 18" stroke="currentColor">
+    <circle r="8.5" cy="9" cx="9" stroke-opacity="0.2"/>
+    <path d="M6.82972 6.82915L1.17193 1.17097" stroke-linecap="round" stroke-linejoin="round" transform="translate(5 5)"/>
+    <path d="M1.22896 6.88502L6.77288 1.11523" stroke-linecap="round" stroke-linejoin="round" transform="translate(5 5)"/>
+  </symbol>
+
+  <symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 18 17">
+    <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+  </symbol>
+</svg>
+
+{%- liquid
+  for block in section.blocks
+    if block.type == '@app'
+      assign has_app_block = true
+    endif
+  endfor
+-%}
+
+<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+  {%- liquid
+    assign social_links = false
+    assign localization_forms = false
+
+    if settings.social_twitter_link != blank or settings.social_facebook_link != blank or settings.social_pinterest_link != blank or settings.social_instagram_link != blank or settings.social_youtube_link != blank or settings.social_vimeo_link != blank or settings.social_tiktok_link != blank or settings.social_tumblr_link != blank or settings.social_snapchat_link != blank
+      assign social_links = true
+    endif
+
+    if localization.available_countries.size > 1 and section.settings.enable_country_selector or section.settings.enable_language_selector and localization.available_languages.size > 1
+      assign localization_forms = true
+    endif
+  -%}
+  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
+    {%- liquid
+      if section.settings.menu != blank
+        render 'header-drawer'
+      endif
+
+      if section.settings.logo_position == 'top-center' or section.settings.menu == blank
+        render 'header-search', input_id: 'Search-In-Modal-1'
+      endif
+    -%}
+
+    {%- if section.settings.logo_position != 'middle-center' -%}
+      {%- if request.page_type == 'index' -%}
+        <h1 class="header__heading">
+      {%- endif -%}
+          <a href="https://www.3dids.com/">
+            {%- if settings.logo != blank -%}
+              <div class="header__heading-logo-wrapper">
+                {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+                {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+                {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
+                {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+                {{ settings.logo | image_url: width: 600 | image_tag:
+                  class: 'header__heading-logo motion-reduce',
+                  widths: widths,
+                  height: logo_height,
+                  width: settings.logo_width,
+                  alt: logo_alt,
+                  sizes: sizes,
+                  preload: true
+                }}
+              </div>
+            {%- else -%}
+              <span class="h2">{{ shop.name }}</span>
+            {%- endif -%}
+          </a>
+      {%- if request.page_type == 'index' -%}
+        </h1>
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- liquid
+      if section.settings.menu != blank
+        if section.settings.menu_type_desktop == 'dropdown'
+          render 'header-dropdown-menu'
+        elsif section.settings.menu_type_desktop != 'drawer'
+          render 'header-mega-menu'
+        endif
+      endif
+    %}
+
+    {%- if section.settings.logo_position == 'middle-center' -%}
+      {%- if request.page_type == 'index' -%}
+        <h1 class="header__heading">
+      {%- endif -%}
+          <a href="https://www.3dids.com/" class="header__heading-link link link--text focus-inset">
+            {%- if settings.logo != blank -%}
+              <div class="header__heading-logo-wrapper">
+                {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+                {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+                {% capture sizes %}(min-width: 750px) {{ settings.logo_width }}px, 50vw{% endcapture %}
+                {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+                {{ settings.logo | image_url: width: 600 | image_tag:
+                  class: 'header__heading-logo',
+                  widths: widths,
+                  height: logo_height,
+                  width: settings.logo_width,
+                  alt: logo_alt,
+                  sizes: sizes,
+                  preload: true
+                }}
+              </div>
+            {%- else -%}
+              <span class="h2">{{ shop.name }}</span>
+            {%- endif -%}
+          </a>
+      {%- if request.page_type == 'index' -%}
+        </h1>
+      {%- endif -%}
+    {%- endif -%}
+
+   
+      
+     
+
+
+
+
+
+
+      
+   
+
+      
+    </div>
+     <base href="https://www.3dids.com/">
+  </header>
+</{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
+
+{%- if settings.cart_type == "notification" -%}
+  {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
+{%- endif -%}
+
+{% javascript %}
+  class StickyHeader extends HTMLElement {
+    constructor() {
+      super();
+    }
+
+    connectedCallback() {
+      this.header = document.querySelector('.section-header');
+      this.headerIsAlwaysSticky = this.getAttribute('data-sticky-type') === 'always' || this.getAttribute('data-sticky-type') === 'reduce-logo-size';
+      this.headerBounds = {};
+
+      this.setHeaderHeight();
+
+      window.matchMedia('(max-width: 990px)').addEventListener('change', this.setHeaderHeight.bind(this));
+
+      if (this.headerIsAlwaysSticky) {
+        this.header.classList.add('shopify-section-header-sticky');
+      };
+
+      this.currentScrollTop = 0;
+      this.preventReveal = false;
+      this.predictiveSearch = this.querySelector('predictive-search');
+
+      this.onScrollHandler = this.onScroll.bind(this);
+      this.hideHeaderOnScrollUp = () => this.preventReveal = true;
+
+      this.addEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
+      window.addEventListener('scroll', this.onScrollHandler, false);
+
+      this.createObserver();
+    }
+
+    setHeaderHeight() {
+      document.documentElement.style.setProperty('--header-height', `${this.header.offsetHeight}px`);
+    }
+
+    disconnectedCallback() {
+      this.removeEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
+      window.removeEventListener('scroll', this.onScrollHandler);
+    }
+
+    createObserver() {
+      let observer = new IntersectionObserver((entries, observer) => {
+        this.headerBounds = entries[0].intersectionRect;
+        observer.disconnect();
+      });
+
+      observer.observe(this.header);
+    }
+
+    onScroll() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
+
+      if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+        this.header.classList.add('scrolled-past-header');
+        if (this.preventHide) return;
+        requestAnimationFrame(this.hide.bind(this));
+      } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+        this.header.classList.add('scrolled-past-header');
+        if (!this.preventReveal) {
+          requestAnimationFrame(this.reveal.bind(this));
+        } else {
+          window.clearTimeout(this.isScrolling);
+
+          this.isScrolling = setTimeout(() => {
+            this.preventReveal = false;
+          }, 66);
+
+          requestAnimationFrame(this.hide.bind(this));
+        }
+      } else if (scrollTop <= this.headerBounds.top) {
+        this.header.classList.remove('scrolled-past-header');
+        requestAnimationFrame(this.reset.bind(this));
+      }
+
+      this.currentScrollTop = scrollTop;
+    }
+
+    hide() {
+      if (this.headerIsAlwaysSticky) return;
+      this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
+      this.closeMenuDisclosure();
+      this.closeSearchModal();
+    }
+
+    reveal() {
+      if (this.headerIsAlwaysSticky) return;
+      this.header.classList.add('shopify-section-header-sticky', 'animate');
+      this.header.classList.remove('shopify-section-header-hidden');
+    }
+
+    reset() {
+      if (this.headerIsAlwaysSticky) return;
+      this.header.classList.remove('shopify-section-header-hidden', 'shopify-section-header-sticky', 'animate');
+    }
+
+    closeMenuDisclosure() {
+      this.disclosures = this.disclosures || this.header.querySelectorAll('header-menu');
+      this.disclosures.forEach(disclosure => disclosure.close());
+    }
+
+    closeSearchModal() {
+      this.searchModal = this.searchModal || this.header.querySelector('details-modal');
+      this.searchModal.close(false);
+    }
+  }
+
+  customElements.define('sticky-header', StickyHeader);
+{% endjavascript %}
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": {{ shop.name | json }},
+    {% if settings.logo %}
+      "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
+    {% endif %}
+    "sameAs": [
+      {{ settings.social_twitter_link | json }},
+      {{ settings.social_facebook_link | json }},
+      {{ settings.social_pinterest_link | json }},
+      {{ settings.social_instagram_link | json }},
+      {{ settings.social_tiktok_link | json }},
+      {{ settings.social_tumblr_link | json }},
+      {{ settings.social_snapchat_link | json }},
+      {{ settings.social_youtube_link | json }},
+      {{ settings.social_vimeo_link | json }}
+    ],
+    "url": {{ request.origin | append: page.url | json }}
+  }
+</script>
+
+{%- if request.page_type == 'index' -%}
+  {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": {{ shop.name | json }},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {{ potential_action_target | json }},
+        "query-input": "required name=search_term_string"
+      },
+      "url": {{ request.origin | append: page.url | json }}
+    }
+  </script>
+{%- endif -%}
+ 
+{% schema %}
+{
+  "name": "t:sections.header.name",
+  "class": "section-header",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "select",
+      "id": "logo_position",
+      "options": [
+        {
+          "value": "top-left",
+          "label": "t:sections.header.settings.logo_position.options__2.label"
+        },
+        {
+          "value": "top-center",
+          "label": "t:sections.header.settings.logo_position.options__3.label"
+        },
+        {
+          "value": "middle-left",
+          "label": "t:sections.header.settings.logo_position.options__1.label"
+        },
+        {
+          "value": "middle-center",
+          "label": "t:sections.header.settings.logo_position.options__4.label"
+        }
+      ],
+      "default": "middle-left",
+      "label": "t:sections.header.settings.logo_position.label",
+      "info": "t:sections.header.settings.logo_help.content"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "default": "main-menu",
+      "label": "t:sections.header.settings.menu.label"
+    },
+    {
+      "type": "select",
+      "id": "menu_type_desktop",
+      "options": [
+        {
+          "value": "dropdown",
+          "label": "t:sections.header.settings.menu_type_desktop.options__1.label"
+        },
+        {
+          "value": "mega",
+          "label": "t:sections.header.settings.menu_type_desktop.options__2.label"
+        },
+        {
+          "value": "drawer",
+          "label": "t:sections.header.settings.menu_type_desktop.options__3.label"
+        }
+      ],
+      "default": "dropdown",
+      "label": "t:sections.header.settings.menu_type_desktop.label",
+      "info": "t:sections.header.settings.menu_type_desktop.info"
+    },
+    {
+      "type": "select",
+      "id": "sticky_header_type",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.header.settings.sticky_header_type.options__1.label"
+        },
+        {
+          "value": "on-scroll-up",
+          "label": "t:sections.header.settings.sticky_header_type.options__2.label"
+        },
+        {
+          "value": "always",
+          "label": "t:sections.header.settings.sticky_header_type.options__3.label"
+        },
+        {
+          "value": "reduce-logo-size",
+          "label": "t:sections.header.settings.sticky_header_type.options__4.label"
+        }
+      ],
+      "default": "on-scroll-up",
+      "label": "t:sections.header.settings.sticky_header_type.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_line_separator",
+      "default": true,
+      "label": "t:sections.header.settings.show_line_separator.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.header.settings.header__1.content"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+      {
+      "type": "color_scheme",
+      "id": "menu_color_scheme",
+      "label": "t:sections.header.settings.menu_color_scheme.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.header.settings.header__3.content",
+      "info": "t:sections.header.settings.header__4.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_country_selector",
+      "default": false,
+      "label": "t:sections.header.settings.enable_country_selector.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.header.settings.header__5.content",
+      "info": "t:sections.header.settings.header__6.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_language_selector",
+      "default": false,
+      "label": "t:sections.header.settings.enable_language_selector.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.header.settings.mobile_layout.content"
+    },
+    {
+      "type": "select",
+      "id": "mobile_logo_position",
+      "options": [
+        {
+          "value": "center",
+          "label": "t:sections.header.settings.mobile_logo_position.options__1.label"
+        },
+        {
+          "value": "left",
+          "label": "t:sections.header.settings.mobile_logo_position.options__2.label"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.header.settings.mobile_logo_position.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.spacing"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.header.settings.margin_bottom.label",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 36,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 36,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 20
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ]
+}
+{% endschema %}
+
+
+  <style>
+    #secion2 {
+  width: 75%;
+  height: 390px;
+ 
+  display: none;
+ 
+  margin: 0 auto;
+  position: fixed; /* Cambiado a 'fixed' para fijar el elemento en la pantalla */
+  top: 25.5%; /* Centra verticalmente en la pantalla */
+  left: 50%; /* Centra horizontalmente en la pantalla */
+  transform: translate(-50%, -50%); /* Ajusta para centrar completamente */
+  z-index: 999; /* Asegura que esté por encima de otros elementos */
+      background-image: url('https://tse4.mm.bing.net/th?id=OIP.eiLljniARVMZP4Ha0jZGxwHaFj&pid=Api&P=0&h=180');
+       background-repeat: no-repeat;
+       background-size: cover;
+      border-radius: 15px;
+      padding-left:43px;
+}
+
+
+    
+    #secion2:hover {
+      width: 75%;
+  height: 390px;
+ 
+  display: none;
+  
+  margin: 0 auto;
+  position: fixed; /* Cambiado a 'fixed' para fijar el elemento en la pantalla */
+  top: 25.5%; /* Centra verticalmente en la pantalla */
+  left: 50%; /* Centra horizontalmente en la pantalla */
+  transform: translate(-50%, -50%); /* Ajusta para centrar completamente */
+  z-index: 999; /* Asegura que esté por encima de otros elementos */
+      background-image: url('https://tse4.mm.bing.net/th?id=OIP.eiLljniARVMZP4Ha0jZGxwHaFj&pid=Api&P=0&h=180');
+       background-repeat: no-repeat;
+       background-size: cover;
+      border-radius: 15px;
+        padding-left:43px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    
+    #leftContent {
+      flex: 1;
+      
+      
+    }
+
+    #rightContent {
+      flex: 2;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .photo {
+      width: 48%; /* Ajusta el ancho según tus necesidades */
+      margin-bottom: 20px;
+     
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+    }
+
+     .row:hover{
+      
+      
+     
+    }
+
+    #btn {
+      width: 30%;
+      padding: 10px;
+      padding-right:4px;
+      margin-top: 10px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+
+
+ #btn:hover {
+      width: 30%;
+      padding: 10px;
+     padding-right:4px;
+      margin-top: 10px;
+      background-color: #345580 ;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 20px;
+   white-space: nowrap;
+    }
+
+
+    
+  #ganar {
+  
+  font-weight: bold;
+  
+}
+    #discover {
+  font-weight: bold;
+  font-size: 2em; /* Puedes ajustar el tamaño según tus preferencias */
+      margin-bottom:-0.5em;
+}
+
+
+
+
+     #shopyimg53453453{
+
+width: 78px; /* Establece el ancho deseado, puedes ajustar el valor según tu necesidad */
+  height: 78px; /* Establece la altura deseada, puedes ajustar el valor según tu necesidad */
+    
+      
+    }
+
+     #shopyimg534534532{
+
+width: 80px; /* Establece el ancho deseado, puedes ajustar el valor según tu necesidad */
+  height: 80px; /* Establece la altura deseada, puedes ajustar el valor según tu necesidad */
+    
+      
+    }
+#lf{
+
+  padding-top:7px;
+  width:25%;
+  transition: border-radius 0.1s ; 
+  padding-left:2px;
+  
+  
+}
+
+#lf:hover {
+   padding-top:7px;
+  border-radius: 10px; 
+  background-color:  white; 
+  padding-left:2px;
+ 
+}
+
+    
+#lf2{
+
+ 
+  width:25%;
+  transition: border-radius 0.3s ; 
+}
+    
+#lf2:hover {
+  border-radius: 10px; 
+  background-color: white; 
+ 
+}
+
+    
+    #rh{
+
+float:right;
+      
+       width:60%;
+         margin-top:-6em;
+      
+      margin-right:2.5em;
+
+
+
+       font-weight: bold;
+    }
+
+
+
+
+#rh2{
+
+float:right;
+     
+       width:60%;
+         margin-top:-6.2em;
+      margin-right:2.5em;
+        
+       font-weight: bold;
+    }
+
+
+
+#rht{
+
+float:right;
+     
+       width:60%;
+        margin-top:-4.5em;
+      
+      margin-right:2.5em;
+       line-height: 1.3em; 
+
+  
+    }
+    
+ .row {
+    display: flex;
+   display: inline;
+    
+  }
+
+  #lf img {
+
+  }
+
+  #rh {
+ 
+     
+  }
+
+
+#especial{
+text-decoration: none; /* Quitar subrayado */
+    color: inherit; /* Heredar el color del texto del elemento padre */
+}
+
+    .row:hover{
+
+         
+
+      
+    }
+  
+  </style>
+  
+
+  <div id="secion2">
+    <div id="leftContent">
+      <h2 id="discover">Discover our </br>servises</h2>
+      <p id="ganar">Ganar, ganar, ganar y volver a ganar. Lo <br> damos todo desde el principio hasta el <br>  final. Acompañando a nuestros clientes<br>  desde hace más de 18 años.</p>
+      <button id="btn"><a id="especial" href="https://form.typeform.com/to/rkFJn2?typeform-medium=embed-snippet&typeform-source=www.3dids.com" > Pedir cita &rarr; </a></button>
+    </div>
+    <div id="rightContent">
+      <div class="photo">
+        <div class="row">
+          <h3 id="lf"><a id="especial" href="https://www.3dids.com/agencia-marketing-digital/"><img  src="https://www.3dids.com/wp-content/uploads/icono-marketing-digital.png"></a></h3>
+          <p id="rh"><a id="especial" href="https://www.3dids.com/agencia-marketing-digital/">Marketing</a></p>
+          <p  id="rht"><a id="especial" href="https://www.3dids.com/agencia-marketing-digital/">Aumenta tu facturación con nuestra estrategia</a></p>
+        </div>
+        <div class="row">
+          <h3 id="lf"><a id="especial" href="https://www.3dids.com/agencia-comunicacion/ "> <img id="shopyimg53453453" src="https://www.3dids.com/wp-content/uploads/comunicacion-megamenu.png"></a></h3>
+          <p  id="rh2"><a id="especial" href="https://www.3dids.com/agencia-comunicacion/ "> Comunicación</a></p>
+          <p  id="rht"> <a id="especial" href=" https://www.3dids.com/agencia-comunicacion/">  Mejoramos y organizamos tu comunicación  </a> </p>
+        </div>
+        <div class="row">
+          <h3 id="lf"><a id="especial" href="https://www.3dids.com/agencia-de-branding/ "><img  id="shopyimg53453453" src="https://www.3dids.com/wp-content/uploads/tecnologias-megamenu.png"></h3>
+          <p id="rh2"> <a id="especial" href="https://www.3dids.com/agencia-de-branding/ ">Branding</p>
+          <p  id="rht"> <a id="especial" href=" https://www.3dids.com/agencia-de-branding/">  Construimos y potenciamos tu modelo de marca  </a> </p>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="row">
+          <h3 id="lf"><a id="especial" href=" https://www.3dids.com/desarrollo-web/"><img id="shopyimg53453453" src="https://www.3dids.com/wp-content/uploads/tecnologias-megamenu.png"> </a></h3>
+          <p id="rh2"><a id="especial" href=" https://www.3dids.com/desarrollo-web/">Tecnologiás </a></p>
+          <p  id="rht"><a id="especial" href=" https://www.3dids.com/desarrollo-web/"> Digitalizamos y automatizamos todos tus procesos   </a>  </p>
+        </div>
+        <div class="row">
+          <h3 id="lf"><a id="especial" href="https://www.3dids.com/consultoria/ "><img id="shopyimg53453453" src="https://www.3dids.com/wp-content/uploads/consultoria-megamenu.png"> </a></h3>
+          <p id="rh2"><a id="especial" href="https://www.3dids.com/consultoria/ ">Consultoría </a></p>
+          <p  id="rht"> <a id="especial" href=" https://www.3dids.com/consultoria/"> Analizamos y mejoramos tu marca y tu modelo  </a> </p>
+        </div>
+        <div class="row">
+          <h3 id="lf"><a id="especial" href=" https://www.3dids.com/agencia-shopify-plus-partners/"><img id="shopyimg534534532" src="https://www.3dids.com/wp-content/uploads/logo_shopify.png"> </a></h3>
+          <p id="rh2"><a id="especial" href=" https://www.3dids.com/agencia-shopify-plus-partners/">Shopify Plus Partners </a></p>
+          <p  id="rht">  <a id="especial" href="https://www.3dids.com/agencia-shopify-plus-partners/ "> Migración a Shopify desde cualquier plataforma, consultoría, diseño, …  </a> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var headerMenu = document.getElementById('Details-HeaderMenu-1');
+    var section2 = document.getElementById('secion2');
+
+    headerMenu.addEventListener('mouseover', function() {
+      section2.style.display = 'flex'; // Cambiado a 'flex' para mantener el estilo flex
+    });
+
+    headerMenu.addEventListener('mouseout', function() {
+      section2.style.display = 'none';
+    });
+
+
+     section2.addEventListener('mouseover', function() {
+      section2.style.display = 'flex';
+    });
+
+    
+    section2.addEventListener('mouseout', function() {
+      section2.style.display = 'none';
+    });
+  </script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
